@@ -37,13 +37,11 @@ void setup() {
 }
 
 
-
 float dt = 0.01;
 // float time, prev_velocity;
 float velocity = 0;
 float speed;
 float displacement = 0;
-
 
 
 
@@ -141,10 +139,10 @@ void loop() {
         }
       }
 
-
       if(timing >= 75) phase = 0; //한 자세로 오래 있으면 오류로 간주 -> 시작 전으로 이동
 
-   if(false) 
+
+    /*
     {if(now > 1.1 && timing >= 100 && MIN <= 0.95) {
       sum += MIN;
       cnt++;
@@ -167,7 +165,7 @@ void loop() {
       timing = 0;
       
     }
-    }
+    }*/
 
 
     //Serial.print(zOffset);
@@ -225,11 +223,6 @@ void calibrateAccelOffsets() {
   int numSamples = 1000; // 샘플링 횟수
 
   for (int i = 0; i < numSamples; i++) {
-    // sensors_event_t event;
-    // IMU.acceleration.getEvent(&event);
-    // sumX += event.acceleration.x;
-    // sumY += event.acceleration.y;
-    // sumZ += event.acceleration.z;
     if(IMU.accelerationAvailable()){
       IMU.readAcceleration(accelX, accelY, accelZ);
       sumX += accelX;
