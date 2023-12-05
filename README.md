@@ -1,8 +1,7 @@
-# arduino ino파일(cpp기반)들 관리
+# arduino ino파일(cpp기반) Repository - 주의점
 
-# 주의점
 여러 시행착오로 인해, 소스코드를 여러개 업로드하게 되었으니 지정된 **최신화된 코드**를 사용할수있도록 합니다.
-### 최신화된 코드
+### 최신화된 코드(23.12.05. ver)
 counting_with_BLE.ino
 
 <br>
