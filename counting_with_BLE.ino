@@ -126,6 +126,8 @@ void updateCount() {
           phase = 0;
           timing = 0;
           count++;
+          // printPhase.writeValue(String(phase));
+          printCount.writeValue(String(count));
         }
       }
 
@@ -158,11 +160,11 @@ void updateCount() {
    ++timing;
 
 
-  String phaseMessage = "Phase : " + String(phase);
-  String countMessage = "Count : " + String(count);
+  // String phaseMessage = "Phase : " + String(phase);
+  // String countMessage = "Count : " + String(count);
 
-  printPhase.writeValue(phaseMessage);
-  printCount.writeValue(countMessage);
+  // printPhase.writeValue(phaseMessage);
+  // printCount.writeValue(countMessage);
 }
 
 // 가속도계의 오프셋 보정
