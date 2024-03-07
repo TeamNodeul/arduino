@@ -6,6 +6,7 @@ counting_with_BLE.ino -> timing조절 필수, 측정 오차가 존재할 수있�
 
 <br>
 
+![image](https://github.com/TeamNodeul/arduino/assets/69042677/61198534-4450-4f77-97a9-dc6552928dc4)
 # 구현된 것
 1. 아두이노 IMU(여기선 가속도센서만 이용)를 이용한 운동 측정 로직
 2. BLE통신을 통해, 스마트폰으로 측정데이터 전달
